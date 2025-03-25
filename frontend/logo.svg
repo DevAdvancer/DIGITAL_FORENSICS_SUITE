@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Dark background -->
+  <rect width="200" height="200" rx="30" ry="30" fill="#1E2530" />
+
+  <!-- Starburst with binary -->
+  <g transform="translate(100, 100)">
+    <!-- Green circle -->
+    <circle cx="0" cy="0" r="40" fill="#6bbd63" />
+
+    <!-- Binary text -->
+    <text x="0" y="0" font-family="monospace" font-size="16" font-weight="bold" fill="#1a1d21" text-anchor="middle" dominant-baseline="middle">101</text>
+    <text x="0" y="20" font-family="monospace" font-size="16" font-weight="bold" fill="#1a1d21" text-anchor="middle" dominant-baseline="middle">010</text>
+
+    <!-- 8 lines radiating out in a pattern -->
+    <rect x="-1.5" y="-80" width="3" height="40" fill="#ff8a80" />
+    <rect x="-1.5" y="40" width="3" height="40" fill="#ff8a80" />
+
+    <rect x="-1.5" y="-80" width="3" height="40" fill="#ff8a80" transform="rotate(45)" />
+    <rect x="-1.5" y="40" width="3" height="40" fill="#ff8a80" transform="rotate(45)" />
+
+    <rect x="-1.5" y="-80" width="3" height="40" fill="#ff8a80" transform="rotate(90)" />
+    <rect x="-1.5" y="40" width="3" height="40" fill="#ff8a80" transform="rotate(90)" />
+
+    <rect x="-1.5" y="-80" width="3" height="40" fill="#ff8a80" transform="rotate(135)" />
+    <rect x="-1.5" y="40" width="3" height="40" fill="#ff8a80" transform="rotate(135)" />
+  </g>
+</svg>

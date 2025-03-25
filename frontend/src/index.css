@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Fira+Code:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Share Tech Mono', monospace;
+    background: #0a0f0d;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Code', monospace;
+  }
+}
+
+.cyber-gradient {
+  background: linear-gradient(135deg, #1a2320 0%, #0a0f0d 100%);
+}
+
+.cyber-border {
+  position: relative;
+  border: 1px solid #22c55e;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.2);
+}
+
+.cyber-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #22c55e, #dc2626);
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0.3;
+}
