@@ -41,7 +41,7 @@ function App() {
   // OSINT state
   const [osintResults, setOsintResults] = useState<any>(null);
 
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>, isSecret = false, isDecrypt = false) => {
     const selectedFile = e.target.files?.[0];
